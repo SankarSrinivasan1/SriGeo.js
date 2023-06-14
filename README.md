@@ -160,7 +160,7 @@ SriGeo.js is released under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback, please contact our team at [sri-geo@example.com](mailto:sri-geo@example.com).
+For any inquiries or feedback, please contact our team at [petra.srini@gmail.com](mailto:petra.srini@gmail.com).
 
 ---
 
