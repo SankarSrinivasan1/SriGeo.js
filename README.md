@@ -69,6 +69,83 @@ geo.stopTracking();
 
 For a complete example and more detailed usage instructions, please refer to the [SriGeo.js documentation](https://sri-geo-docs.example.com).
 
+## Usage
+How you can use SriGeo.js in your application:
+
+```javascript
+// Instantiate SriGeo
+const geo = new SriGeo();
+
+// Start tracking user's location
+geo.startTracking(
+  (latitude, longitude) => {
+    console.log("User's current location:", latitude, longitude);
+    // Perform actions based on the user's location
+    // For example, update a map marker or display nearby points of interest
+  },
+  (error) => {
+    console.error("Error retrieving geolocation:", error);
+    // Handle the error appropriately, such as displaying an error message to the user
+  }
+);
+
+// Create geofences
+const targetLocations = [
+  {
+    latitude: 37.7749,
+    longitude: -122.4194,
+    radius: 1, // in kilometers
+    onEnter: () => {
+      console.log("User entered the geofence at location 1!");
+      // Perform custom action on entering the geofence at location 1
+    },
+    onExit: () => {
+      console.log("User exited the geofence at location 1!");
+      // Perform custom action on exiting the geofence at location 1
+    }
+  },
+  {
+    latitude: 40.7128,
+    longitude: -74.0060,
+    radius: 0.5, // in kilometers
+    onEnter: () => {
+      console.log("User entered the geofence at location 2!");
+      // Perform custom action on entering the geofence at location 2
+    },
+    onExit: () => {
+      console.log("User exited the geofence at location 2!");
+      // Perform custom action on exiting the geofence at location 2
+    }
+  }
+];
+
+targetLocations.forEach((location) => {
+  geo.createGeofence(
+    location.latitude,
+    location.longitude,
+    location.radius,
+    location.onEnter,
+    location.onExit
+  );
+});
+
+// Stop tracking user's location (optional)
+// geo.stopTracking();
+```
+
+In this example, we first create an instance of the `SriGeo` class using `const geo = new SriGeo();`.
+
+Next, we start tracking the user's location by calling `geo.startTracking()` and passing a callback function to handle the location updates. The callback function receives the latitude and longitude of the user's current location.
+
+You can then perform actions based on the user's location, such as updating a map marker or displaying nearby points of interest.
+
+To create geofences, you define an array of target locations, each with its latitude, longitude, and radius. For each target location, you provide `onEnter` and `onExit` callback functions that will be triggered when the user enters or exits the geofence, respectively. Inside these callbacks, you can define custom actions to be performed.
+
+Finally, you can optionally stop tracking the user's location by calling `geo.stopTracking()` when it is no longer needed.
+
+This is a basic example of how you can use SriGeo.js to track user location and create geofences in your application. You can customize the implementation according to your specific requirements and integrate it into your JavaScript application.
+
+
 ## Compatibility
 
 SriGeo.js relies on the Geolocation API provided by modern web browsers. Please refer to the [compatibility table](https://caniuse.com/geolocation) to ensure that the library is supported in your target browsers.
