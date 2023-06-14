@@ -202,5 +202,14 @@ geo.createGeofence(
 
     console.log("User exited the geofence!");
 
-    // Perform custom action on exiting the ge
+    // Perform custom action on exiting the geofence
+  
 
+
+}
+
+);
+
+// Stop tracking user's location
+
+// geo.stopTracking();
