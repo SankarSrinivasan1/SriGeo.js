@@ -165,17 +165,13 @@ This is a basic example of how you can use SriGeo.js to track user location and 
 
 SriGeo.js relies on the Geolocation API provided by modern web browsers. Please refer to the [compatibility table](https://caniuse.com/geolocation) to ensure that the library is supported in your target browsers.
 
-## Contributing
-
-Contributions are welcome! If you find a bug, have a feature request, or want to contribute to the project, please open an issue or submit a pull request following the contribution guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
 ## License
 
 SriGeo.js is released under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback, please contact our team at [petra.srini@gmail.com](mailto:petra.srini@gmail.com).
+For any inquiries or feedback, please contact Sankar Srinivasan at [petra.srini@gmail.com](mailto:petra.srini@gmail.com).
 
 ---
 
