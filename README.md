@@ -13,7 +13,26 @@ SriGeo.js is a geolocation-based JavaScript library that offers advanced locatio
 ## Getting Started
 ### Installation
 
-You can install SriGeo.js via npm
+- You can include `SriCache.js` in your project by downloading the script and including it in your HTML file:
+```html
+<script src="path/folder/srigeo.js"></script>
+```
+- You can install SriGeo.js via npm
+Alternatively, you can also install `SriGeo.js` using npm:
+```shell
+npm install srigeo
+```
+Then, you can import it into your JavaScript file:
+```javascript
+import SriGeo from 'srigeo';
+```
+
+## CDN
+You can include `SriGeo.js` in your project by adding the following script tag to your HTML file:
+```html
+<script src="https://cdn.jsdelivr.net/gh/SankarSrinivasan1/SriGeo.js@main/SriGeo.js"></script>
+```
+By providing the specific URL for the `SriGeo.js` file hosted on the jsDelivr CDN, users can directly include the library in their projects without having to download or host the file themselves.
 
 ### Usage
 To use SriGeo.js in your JavaScript project, follow these steps:
