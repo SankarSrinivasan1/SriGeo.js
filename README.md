@@ -17,8 +17,7 @@ SriGeo.js is a geolocation-based JavaScript library that offers advanced locatio
 ```html
 <script src="path/folder/srigeo.js"></script>
 ```
-- You can install SriGeo.js via npm
-Alternatively, you can also install `SriGeo.js` using npm:
+- You can install `SriGeo.js` using npm:
 ```shell
 npm install srigeo
 ```
