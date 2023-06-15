@@ -84,8 +84,6 @@ geo.createGeofence(
 geo.stopTracking();
 ```
 
-For a complete example and more detailed usage instructions, please refer to the [SriGeo.js documentation](https://sri-geo-docs.example.com).
-
 ## Usage
 How you can use SriGeo.js in your application:
 
