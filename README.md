@@ -25,8 +25,7 @@ Then, you can import it into your JavaScript file:
 ```javascript
 import SriGeo from 'srigeo';
 ```
-
-## CDN
+- CDN
 You can include `SriGeo.js` in your project by adding the following script tag to your HTML file:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/SankarSrinivasan1/SriGeo.js@main/SriGeo.js"></script>
