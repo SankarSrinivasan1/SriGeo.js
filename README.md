@@ -13,7 +13,7 @@ SriGeo.js is a geolocation-based JavaScript library that offers advanced locatio
 ## Getting Started
 ### Installation
 
-- You can include `SriCache.js` in your project by downloading the script and including it in your HTML file:
+- You can include `SriGeo.js` in your project by downloading the script and including it in your HTML file:
 ```html
 <script src="path/folder/srigeo.js"></script>
 ```
